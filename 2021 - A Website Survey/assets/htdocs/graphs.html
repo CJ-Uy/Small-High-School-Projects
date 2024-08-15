@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="../css/graphs.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+  <title>Survey Graphs</title>
+</head>
+
+<body>
+  <div id="graphs">
+
+    <div class="graphs_section" id="color_graphs">
+      <h1>COLOR</h1>
+      <div id="bg_color_container">
+        <canvas id="bg_color"></canvas>
+      </div>
+      <div id="bg_color_solid_container">
+        <canvas id="bg_color_solid"></canvas>
+      </div>
+      <div class="grad_info_container" id="grad_angle_container">
+        <canvas id="grad_angle"></canvas>
+      </div>
+      <div class="grad_info_container" id="grad_color1_container">
+        <canvas id="grad_color1"></canvas>
+      </div>
+      <div class="grad_info_container" id="grad_color2_container">
+        <canvas id="grad_color2"></canvas>
+      </div>
+
+      <div class="misc_color" id="card_bg_color_container">
+        <canvas id="card_bg_color"></canvas>
+      </div>
+      <div class="misc_color" id="text_color_container">
+        <canvas id="text_color"></canvas>
+      </div>
+      <div class="misc_color" id="border_color_container">
+        <canvas id="border_color"></canvas>
+      </div>
+      <div class="misc_color" id="avrg_border_width">
+        <h2>Average Border Width</h2>
+        <p id="avrg_border_width_value"></p>
+      </div>
+
+      <div class="line" id="line1"></div>
+      <div class="line" id="line2"></div>
+      <div class="line" id="line3"></div>
+    </div>
+
+    <div class="graphs_section" id="fonts_graphs">
+      <h1>FONTS</h1>
+      <div class="font_fam_graph_container" id="heading_font_fam_container">
+        <canvas id="heading_font_fam"></canvas>
+      </div>
+      <div class="font_fam_graph_container" id="content_font_fam_container">
+        <canvas id="content_font_fam"></canvas>
+      </div>
+
+      <div class="misc_font" id="avrg_head_font_size">
+        <h2>Average Heading Font Size</h2>
+        <p id="avrg_heading_font_size"></p>
+      </div>
+
+      <div class="misc_font" id="avrg_subhead_font_size">
+        <h2>Average Subheading Font Size</h2>
+        <p id="avrg_subheading_font_size"></p>
+      </div>
+
+      <div class="misc_font" id="avrg_content_font_size">
+        <h2>Average Content Font Size</h2>
+        <p id="avrg_content_fontsize"></p>
+      </div>
+
+      <div class="misc_font" id="avrg_head_letter_space">
+        <h2>Average Heading Letter Spacing</h2>
+        <p id="avrg_heading_letter_spacing"></p>
+      </div>
+    </div>
+
+    <div class="graphs_section" id="satisfaction_graphs">
+      <h1>SATISFACTION</h1>
+      <div id="satisfaction_graph_container">
+        <canvas id="satisfaction_graph"></canvas>
+      </div>
+    </div>
+
+  </div>
+
+  <footer>
+    <button onclick="change_card(-1)">BACK</button>
+    <button onclick="change_card(1)">NEXT</button>
+  </footer>
+
+
+  <script src="../javascript/graphs.js"></script>
+</body>
+
+</html>

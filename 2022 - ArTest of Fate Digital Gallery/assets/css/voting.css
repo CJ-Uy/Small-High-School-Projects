@@ -1,0 +1,52 @@
+body{
+    color: antiquewhite;
+    text-align: center;
+}
+
+h1 {
+    font-family: brush;
+    font-size: 5vw;
+    margin-bottom: 1.5vw;
+}
+
+#instructions {
+    margin-left: 20vw;
+    margin-right: 20vw;
+} #instructions > p {
+    font-size: 1.5vw;
+}
+
+#link_container{
+    /*
+    border: 0.2vw solid black;
+    border-radius: 10%;
+    background-color: black;
+    background: rgba(0,0,0,0.3);
+    */
+    height: 10vw;
+    margin-top: 3vw;
+    margin-left: 10vw;
+    margin-right: 10vw;
+}#link_container > a {
+    text-decoration: none;
+    color: #e3ab5e;
+    font-size: 3vw;
+    text-shadow: 0 0 10px #e3ab5e;
+    position: relative;
+    top:32%;
+    transform: translateY(-50%);
+} #link_container > a:hover {
+    color: white;
+    text-decoration: underline;
+} 
+#social_media_icons{
+    margin-top: 3vw;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+
+.media_icon {
+    margin-left: 0.5vw;
+    margin-right: 0.5vw;
+    height: 4vw;
+}

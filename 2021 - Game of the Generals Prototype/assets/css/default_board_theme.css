@@ -1,0 +1,150 @@
+
+/* CSS FOR THE GAME BOARD */
+
+#game_board {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  border: 0.05vw solid black;
+}
+
+.cell {
+  border: 0.05vw solid black;
+  box-sizing: border-box;
+
+  float: right;
+
+  height: 5vw;
+  width: 5vw;
+}
+
+
+/* CSS FOR THE GAME TIMER */
+
+#Game_timer {
+  width: 20vw;
+  height: 35vw;
+
+  position: fixed;
+  top: 50%;
+  left: 2.5%;
+  transform: translate( 0, -50%);
+
+  border: 2px solid black;
+  border-radius: 5px;
+}
+
+.timer {
+  height: 12.5vw;
+  width: 18vw;
+  position: relative;
+  
+  margin-left: auto;
+  margin-right: auto;
+
+  border: 1px solid black;
+  border-radius: 5%;
+}
+
+#turn_teller {
+  height: 7vw;
+  width: 18vw;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0.5vw;
+  margin-bottom: 0.5vw;
+  border: 1px solid black;
+}
+
+#opponent_time_left {
+  margin-top: 0.75vw;
+}
+
+
+/* CSS FOR THE GAME SETUP TABS */
+
+#setup_tabs {
+  width: 20vw;
+  height: 45vw;
+
+  position: fixed;
+  top: 50%;
+  right: 2.5%;
+  transform: translate( 0, -50%);
+
+  border: 2px solid black;
+  border-radius: 5px;
+}
+
+.tabcontent {
+  margin: 0.5vw;
+  text-align: center;
+
+  animation: fade_effect 1s;
+}
+
+@keyframes fade_effect {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+button {
+  width: 5vw;
+  height: 2vw;
+
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  text-align: center;
+}
+  button.active {
+    background-color:lightgray;
+  }
+
+
+.tab {
+  width: 20vw;
+  height: 2vw;
+
+  background-color: grey;
+}
+
+.game_piece {
+  border: 1px solid black;
+  margin: 1vw;
+  
+  height: 4vw;
+  width: 4vw;
+}
+
+  .tabcontent {
+    animation: fade_effect 1s; 
+  }
+
+  @keyframes fade_effect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
+
+  button {
+    border:none;
+    border-radius: 3px;
+
+    width: 5vw;
+    height: 2vw;
+  }
+
+  .game_piece {
+    border: 1px solid black;
+    margin: 1vw;
+    
+    height: 4vw;
+    width: 4vw;
+  }
+
+
+

@@ -1,0 +1,342 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    background-image: url('../images/home_images/bg.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+}
+
+#cover {
+    opacity: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background-color: white;
+    z-index: 100;
+    border: 1px solid blue;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+
+@keyframes coverExit {
+    from { opacity: 1 }
+    to { opacity: 0; display: none; }
+}
+
+#load {
+    width: 100px;
+    height: 100px;
+    border: 10px dotted black;
+    border-radius: 50%;
+    animation-name: loading;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes loading {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+
+#opening_title, #botLeftOpening, #topRightOpening {
+    position: absolute;
+    width: 70vw;
+}
+
+#opening_title {
+    opacity: 0;
+    z-index: 0; /* maybe find a way to remove element after animation instead? */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+
+#botLeftOpening {
+    left: 0;
+    bottom: 0;
+    opacity: 0;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+
+#topRightOpening {
+    right: 0;
+    opacity: 0;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+
+@keyframes titleEnter {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes botLeftEnter {
+    from {
+        bottom: -40px;
+        opacity: 0;
+    }
+    to {
+        bottom: 0;
+        opacity: 1;
+    }
+}
+
+@keyframes topRightEnter {
+    from {
+        top: -40px;
+        opacity: 0;
+    }
+    to {
+        top: 0;
+        opacity: 1;
+    }
+}
+
+@keyframes titleExit {
+    from { opacity: 1; }
+    to { opacity: 0; display: none; }
+}
+
+@keyframes botLeftExit {
+    from {
+        bottom: 0;
+        opacity: 1;
+    }
+    to {
+        bottom: -40px;
+        opacity: 0;
+        display: none;
+    }
+}
+
+@keyframes topRightExit {
+    from {
+        top: 0;
+        opacity: 1;
+    }
+    to {
+        top: -40px;
+        opacity: 0;
+        display: none;
+    }
+}
+
+.card {
+    position: absolute;
+    display: inline-block;
+    height: 60%;
+    width: 20%;
+	margin-top: 2%;
+}
+
+.center {
+    height: 75%;
+    width: 25%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation-duration: 0.2s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    perspective: 1000px;
+    background-color: transparent;
+	cursor: pointer;
+}
+
+.centerInner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+/*
+.center:active .centerInner {
+    transform: rotateY(180deg);
+}
+*/
+.centerFront, .centerBack {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+}
+
+.centerFront {
+    width: 100%;
+    height: 100%;
+    background-image: url("../images/home_images/2.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.centerBack {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../images/home_images/2b.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    transform: rotateY(180deg);
+    text-align: center;
+}
+
+            
+.left {
+    top: 50%;
+    left: 10%;
+    transform: translate(0, -50%);
+    animation-duration: 0.2s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    background-image: url("../images/home_images/1.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+}
+
+.right {
+    top: 50%;
+    right: 10%;
+    transform: translate(0, -50%);
+    animation-duration: 0.2s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    background-image: url("../images/home_images/3.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+}
+
+@keyframes moveLeftCenter {
+    from {
+        height: 75%;
+        width: 25%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    to {
+        height: 60%;
+        width: 20%;
+        left: 10%;
+        transform: translate(0, -50%);
+    }
+}
+
+@keyframes moveLeftLeft {
+    from { opacity: 1; }
+    to { opacity: 0; display: none; }
+}
+
+@keyframes moveLeftRight {
+    from {
+        height: 60%;
+        width: 20%;
+        right: 10%;
+        transform: translate(0, -50%);
+    }
+    to {
+        height: 75%;
+        width: 25%;
+        right: 50%;
+        transform: translate(50%, -50%);
+    }
+}
+
+@keyframes moveRightCenter {
+    from {
+        height: 75%;
+        width: 25%;
+        left: 50%;
+        right: 0;
+        transform: translate(-50%, -50%);
+    }
+    to {
+        height: 60%;
+        width: 20%;
+        left: 70%;
+        transform: translate(0, -50%);
+    }
+}
+
+@keyframes moveRightLeft {
+    from { 
+        height: 60%;
+        width: 20%;
+        left: 10%;
+        transform: translate(0, -50%);
+    }
+    to { 
+        height: 75%;
+        width: 25%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+@keyframes moveRightRight {
+    from { opacity: 1 }
+    to { opacity: 0; display: none; }
+}
+
+/* Charles was here */
+.landing_page{
+    opacity: 0;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+.centerBack{
+    color: #e3ab5e;
+    font-size: 1.5vw;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.block {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	background-color: blue;
+	z-index: 1000;
+	border: 1px solid white;
+	opacity: 0;
+	display: none;
+	cursor: pointer;
+}
+
+#description > p {
+    position: absolute;
+    left: 50%;
+    top: 90%;
+    transform: translateX(-50%);
+    color: #e3ab5e;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.5vw;
+}

@@ -1,0 +1,81 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: lightcoral;
+  font-family: Segoe UI;
+}
+
+.tabs {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  width: 60vw;
+  height: 30vw;
+
+  background-color: cornsilk;
+  overflow: hidden;
+
+  display: flex;
+
+  /*box shadow maybe later */
+}
+
+.tab_header {
+  width: 8vw;
+}
+.tab_header > div {
+  width: 100%;
+  height: calc(100%/4);
+  background-color: lightgrey;
+  color: grey;
+
+  text-indent: 1vw;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+
+  font-size: 1vw;
+  font-weight: bold;
+
+  cursor: pointer;
+  /* Animation */
+  transition: all 200ms ease-in-out;
+
+}
+.tab_header > div.active {
+  border-left: 0.2vw solid blue;
+  color: lightblue;
+  background-color: cornsilk;
+
+} 
+
+.tab_content {
+  flex: 1;
+  position: relative;
+}
+.tab_content > div {
+  position: absolute;
+  top: -50vh;
+  left: 10vw;
+  opacity: 0;
+
+  /* Animation */
+  transition: opacity 200ms ease-in-out 0ms,
+              left 300ms ease-in-out 0ms,
+              top 0ms ease-in-out 3000ms;
+}
+
+.tab_content > div.active {
+  top: 2vw;
+  left: 2vw;
+  opacity: 1;
+
+  /* Animation */
+  transition: opacity 200ms ease-in-out 0ms,
+              left 300ms ease-in-out 0ms,
+              top 0ms ease-in-out 0ms;
+}

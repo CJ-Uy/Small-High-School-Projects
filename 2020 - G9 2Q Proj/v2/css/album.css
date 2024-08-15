@@ -1,0 +1,58 @@
+#cover {
+  width: 35vw;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.media-links-vis > a{
+  text-decoration: none;
+  background-image: url("../images/social_media_sprites.png");
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+}
+.media-links-vis {
+  text-align: center;
+}
+
+table {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+  border-collapse: collapse;
+}
+table, th, td {
+  border: 2px solid white;
+}
+th, td{
+  padding: 30px;
+}
+.num {
+  text-align: center; 
+}
+
+.more-info {
+  text-align: justify;
+  padding-left: 7vw;
+  padding-right: 7vw;
+  padding-bottom: 3vh;
+}
+
+.extra-albums {
+  font-size: 2vw;
+  margin-left: 20vw;
+}
+.extra-albums-cover{
+  width: 25vw;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.more-info-extra-albums{
+  text-align: center;
+  margin-left: 10vw;
+  margin-right: 10vw;
+}

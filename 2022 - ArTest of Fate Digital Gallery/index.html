@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="assets/images/AC.png"> <!--Favicon-->
+    <script src="assets/javascript/jquery-3.6.0.js"></script>
+    <link rel="stylesheet" href="assets/css/index.css">
+    <link rel="stylesheet" href="assets/css/universal.css">
+    <title>Digital Gallery</title>
+</head>
+<body>
+        <!--Opening Animation-->
+        <!--
+            <div id="cover"><div id="load"></div></div>
+        -->	
+		<img id="opening_title" src="assets/images/home_images/title.png">
+		<img id="botLeftOpening" src="assets/images/home_images/bot-left-opening.png">
+		<img id="topRightOpening" src="assets/images/home_images/top-right-opening.png">
+
+        <!--After Opening animation-->
+        <div class = "landing_page">
+            <div class="header"> <!--Not working idk why (css in universal)-->
+                <img id="title" src="assets/images/Title.png" alt="ArtTest-of-Fate">
+                <p>
+                    <a class="nav_link" href="index.html" id="current_html">HOME</a>
+                    <a class="nav_link" href="assets/html/about.html">ABOUT</a>
+                    <a class="nav_link" href="assets/html/voting.html">VOTING</a>
+                    <a class="nav_link" href="assets/html/winners.html">WINNERS</a>
+                </p>
+            </div>
+
+            <div id="card_display">
+                <div class="card left"></div>
+                <div class="card center">
+                    <div class="centerInner">
+                        <div class="centerFront"></div>
+                        <div class="centerBack">
+                            Maxene Rhayne Paler
+                        </div>
+                    </div>
+                </div>
+                <div class="card right"></div>
+            </div>
+            <div id="description">
+                <p>
+                    Click the cards to interact with them!
+                </p>
+            </div>
+        </div>
+		
+		<div class="block"></div>
+
+    <script src="assets/javascript/home.js">
+    </script>
+</body>
+</html>

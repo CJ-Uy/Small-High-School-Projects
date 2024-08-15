@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>GOG ONLINE</title>
+		
+		<link rel="stylesheet" href="assets/css/universal.css">
+		<link rel="stylesheet" href="assets/css/index.css">
+
+	</head>
+	<body>
+		<div id="game_selection_area">
+
+			<h1 id="game_title">
+			  GAME OF THE GENERALS
+			</h1>
+
+			<button class="options" onclick="document.location = 'assets/html/Board.html'">
+			  <p>SINGLE PLAYER</p>
+			</button>
+
+			<button class="options" onclick="document.location = 'assets/html/Board.html'">
+			  <p>MULTI PLAYER</p>
+			</button>  
+
+			<button class="options" onclick="document.getElementById('settings').style.opacity = '1';">
+			  <p>SETTINGS</p>
+			</button> 
+
+			<button class="options" onclick="window.open('assets/html/about.html')">
+			  <p>ABOUT</p>
+			</button> 
+		
+		</div>
+
+		<div id="homescreen_right">
+
+			<div id="game_rank">
+				<div id="outer_hexagon">
+					<div id="inner_hexagon">
+						<div id="rank_image">
+						<!--private rank-->
+						</div>
+					</div>
+				</div>
+
+				<div id="player_name">
+					<h3>YOLO MOON BASE</h3>
+				</div>
+			</div>
+			
+			<div id="updates">
+				<div id="panels">
+				<!--Updates-->
+				</div>
+			</div>
+
+      <div id="player_name">
+        <h3>YOLO MOON BASE</h3>
+      </div>
+    </div>
+    
+    <div id="updates">
+      <div id="panel_title">
+        <h1>UPDATES</h1>
+      </div>
+      <div id="panels">
+        <!--Updates-->
+        <h1>PATCHES AND UPDATES</h1>
+      </div>
+    </div>
+
+    <div id="shop">
+      <div id="panel_title"><h1>SHOP</h1></div>
+      <div id="shop-item"><div id="item-price"><h4>$$$</h4></div></div>
+      <div id="shop-item-center"><div id="item-price"><h4>$$$</h4></div></div>
+      <div id="shop-item"><div id="item-price"><h4>$$$</h4></div></div>
+    </div>
+
+  </div>  
+  
+  <div id="socials_and_bug_report">
+    <div id="icon">
+      <!--Bug icon -> redirects to sending an email-->
+    </div>
+    <div id="middle_icon">
+      <!--Sending money place hehehe -->
+    </div>
+    <div id="icon">
+      <!--Twitter icon-->
+    </div>
+  </div>
+
+			<div id="shop">
+				<div id="shop-item"><div id="item-price"><h4>$$$</h4></div></div>
+				<div id="shop-item-center"><div id="item-price"><h4>$$$</h4></div></div>
+				<div id="shop-item"><div id="item-price"><h4>$$$</h4></div></div>
+			</div>
+
+		</div>  
+	  
+		<div id="socials_and_bug_report">
+
+		</div>
+
+		<div id="popUpsCont">
+			<div id="settings" class="popUps">
+				Difficulty
+				<button class="closePopUp" onclick="document.getElementById('settings').style.opacity = '0';">X</button>
+			</div>	
+		</div>
+		
+		<script>
+			window.onload = function load_pop_ups() {
+					document.getElementById("settings").style.visibility = "visible";
+					document.getElementById("about").style.visibility = "visible";
+				};
+		</script>
+	</body>
+</html>

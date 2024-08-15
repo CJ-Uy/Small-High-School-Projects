@@ -1,0 +1,95 @@
+body{
+    color: antiquewhite;
+    text-align: center;
+}
+.content {
+    scroll-snap-type: y mandatory; /*IDK WHY ITS NOT WORKING HELP*/
+}
+.child {
+    scroll-snap-align: start;
+}
+
+h1 {
+    text-align: center;
+    font-size: 5vw;
+    font-family: brush;
+    margin-bottom: 5vw;
+}
+
+.about_container > table {
+    margin-top: -3vw;
+    text-decoration: none;
+}
+
+.about_table_cell {
+    width: 20vw;
+    padding: 0.25vw;
+    text-align: center;
+} .about_table_cell > p{
+    text-align: justify;
+    text-justify: inter-word;
+}
+#info {
+    width: 40vw;
+    
+} #info > p {
+    margin-right: 2vw;
+    font-size: 1.55vw;
+    margin-top: -3vw;
+}
+
+.ref_sheet {
+    height: 12.75vw;
+}
+
+#social_media_icons{
+    margin-left: 25%;
+    transform: translateX(-25%);
+    margin-top: -3vw;
+}
+
+.media_icon {
+    margin-left: 0.5vw;
+    margin-right: 0.5vw;
+    height: 3vw;
+}
+
+#judges_title {
+    margin-top: 9vw;
+}
+
+.judges_img {
+    border-radius: 50%;
+    height: 12vw;
+    padding: 1vw;
+}
+
+table {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#judges {
+    margin-top: -2.75vw;
+}
+
+.judge_table_cell{
+    padding: 1vw;
+    width: 20vw;
+    text-align: justify;
+    font-size: 1vw;
+}
+.name {
+    text-align: center;
+    font-size: 1.5vw;
+    color: #e3ab5e;
+    font-weight: bold;
+}
+
+#credits {
+    margin-top: -4vw;
+    width: 50vw;
+    font-size: 1vw;
+}
+

@@ -1,0 +1,54 @@
+:root {
+    --black: #494c62;
+    --white: #ffff;
+    --green: #29b475;
+    --yellow: #fbb040;
+    --lightgray: #d7d7d7;
+    --gray: #6a6d7f;
+}
+
+@font-face {
+    font-family: Manrope;
+    src: url(../fonts/Manrope-VariableFont_wght.ttf);
+}
+
+* {
+    font-family: Manrope;
+    color: #1e1e1e;
+}
+
+/* * {
+    outline: 2px solid lightgreen;
+} */
+
+/*  Header  */
+header{
+    width: 100%;
+    margin-top: 1%;
+}
+
+h1 {
+    width: auto;
+    display:inline-block;
+    font-size: 35px;
+}
+
+#logo {
+    margin-left: 8%;
+    height: 35px;
+    width: 35px;
+}
+
+nav {
+    display: inline-block;
+    width: 50%;
+    margin-left: 5%;
+}
+
+nav a {
+    text-decoration: none;
+}
+  
+nav a.router-link-exact-active {
+    color: var(--green);
+}

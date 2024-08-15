@@ -1,0 +1,75 @@
+@font-face {
+    font-family: brush;
+    src: url(../fonts/British\ Castilla.otf);
+}
+
+
+html, body{
+	height: 100%;
+    margin: 0;
+}
+
+body {
+    background-image: url('../images/about_images/Background.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: helvetica, Arial;
+}
+h1{
+    font-family: brush;
+    font-size: 3.25vw;
+    color: #e3ab5e;
+}
+
+.header{
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 7vw;
+    background: rgba(0,0,0,0.3);
+    color: antiquewhite;
+    z-index: 100;
+}
+
+#title {
+    position: relative;
+    display: block;
+    height: 5vw;
+    top: -0.25vw;
+    left: 50%; 
+    transform: translate(-50%,0);
+}
+
+.header > p {
+    text-align: center;
+    margin-top: 0vw;
+}
+
+@media screen and (max-width: 800px){
+    .header > p {
+        margin-top: -1vw;
+    }
+}
+
+#current_html {
+    color: #e3ab5e;   
+}
+
+.nav_link {
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1vw;
+    margin-left: 2vw;
+    margin-right: 2vw;
+    color: antiquewhite;
+} .nav_link:hover{
+    color: #e3ab5e;
+}
+
+
+.content {
+    margin-top: -3vw;
+}

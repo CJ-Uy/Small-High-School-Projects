@@ -1,0 +1,21 @@
+@font-face {
+  font-family: grobold;
+  src: url(../fonts/GROBOLD.ttf);
+}
+
+h1 {
+  font-family: grobold;
+  text-align: center;
+  font-size: 3vw;
+}
+
+#pointer {
+  position: absolute;
+  width: 10vw;
+
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+
+  bottom: 5vw;
+}

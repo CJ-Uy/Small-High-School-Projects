@@ -1,0 +1,345 @@
+body {
+  background-color: black;
+}
+
+#game_selection_area {
+  background-color: white;
+
+  
+  top: 0.5vw;
+  left: 0.9vw;
+  position: absolute;
+  height: 98%;
+  width: 44%;
+  z-index: 9;
+
+  clip-path: polygon(0 0, 100% 0, 75% 100%, 0 100%)
+}
+
+#homescreen_right {
+  top: 0;
+  right: 0;
+
+  position: absolute;
+  width: 68%;
+  height: 100%;
+  box-sizing: border-box;
+  border-left: 30vw;
+  border-bottom: 100%;
+
+  background-color: white;
+
+  clip-path: polygon(20% 0, 100% 0, 100% 100%, 3.5% 100%)
+
+}
+
+/* GAME OPTIONS */
+
+#game_title {
+    font-family: acherus_militant_bold;
+
+    font-size: 2.5vw;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    margin-top: 3vw;
+    margin-bottom: 5vw;
+
+    border: 0.4vw solid black;
+    border-left: none;
+    height: 7vw;
+    width: 35vw;
+}
+
+.options {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-left: 5vw;
+  margin-bottom: 1.5vw;
+
+  border: 0.3vw solid black;
+  height: 5vw;
+  width: 25vw;
+  
+  cursor: pointer;
+}
+  
+  .options > p {
+    text-decoration: none;
+    color: black;
+
+    font-family: steelfish_rg;
+    font-size: 3vw;
+	font-weight: bold;
+    letter-spacing: 0.05vw;
+  }
+
+/* GAME RANK */
+#game_rank {
+  position: fixed;
+
+  top: 1.5vw;
+  right: 1vw;
+}
+
+/*hexagone made by placing 2 traingles (but not really) ontop and below a rectangle*/
+/* calculator : https://www.omnicalculator.com/math/hexagon */
+/* 
+  FORMULA FORHEXAGON VALUES
+
+   height of rectangle = side length 
+   width of recatngle = s 
+   border-left & right = s/2 
+   border-bottom & top = sqrt(side^2 - (s/2)^2 )
+*/
+#inner_hexagon {
+  /* The rectangle */
+  position: relative;
+  width: 5.196vw;
+  height: 3vw;
+  background: lightgreen;
+  margin: 1vw;
+  z-index: 3;
+}
+  /* Width of the 2 triangles on the rectangle */
+  #inner_hexagon::before,
+  #inner_hexagon::after {
+    content: "";
+    position: absolute;
+    border-left: 2.598vw solid transparent;
+    border-right: 2.598vw solid transparent;
+    z-index: 3;
+  }
+  /* Height of the 2 triangles *2 on the rectangle */
+  #inner_hexagon::before {
+    bottom: 100%;
+    border-bottom: 1.5vw solid lightgreen;
+  }
+  #inner_hexagon::after {
+    top: 100%;
+    border-top: 1.5vw solid lightgreen;
+  }
+
+#outer_hexagon {
+  /* The rectangle */
+  position: relative;
+  width: 6.928vw;
+  height: 4vw;
+  background: dodgerblue;
+  margin: 1vw;
+  z-index: 2;
+  transform: rotate(90deg);
+}
+  /* Width of the 2 triangles on the rectangle */
+  #outer_hexagon::before,
+  #outer_hexagon::after {
+    content: "";
+    position: absolute;
+    border-left: 3.464vw solid transparent;
+    border-right: 3.464vw solid transparent;
+    z-index: 2;
+  }
+  /* Height of the 2 triangles *2 on the rectangle */
+  #outer_hexagon::before {
+    bottom: 100%;
+    border-bottom: 2vw solid dodgerblue;
+  }
+  #outer_hexagon::after {
+    top: 100%;
+    border-top: 2vw solid dodgerblue;
+  }
+
+/* STYLING FOR THE HEXAGONS*/
+
+#inner_hexagon {
+  top: 0.5vw;
+}
+
+#player_name {
+  position: fixed;
+
+  top: 2.5vw;
+  right: 8vw;
+
+  height: 4vw;
+  width: 20vw;
+  border: 0.5vw solid black;
+  border-right: none;
+}
+
+#player_name > h3 {
+  position: relative;
+  font-family: acherus_militant;
+  font-size: 1.2vw;
+  text-align: center;
+  top: -0.2vw;
+}
+
+/* STYLING FOR UPDATES */
+#updates {
+  position: absolute;
+  top: 8.5vw;
+  right: 8.5vw;
+
+  width: 40vw;
+  height: 18vw;
+
+  border-radius: 1vw;
+  border: 0.25vw solid black;
+
+  display: flex;
+  justify-content:center;
+  align-items: center;
+}
+
+#panels {
+  position: absolute;
+  margin-right: auto;
+  margin-left: auto;
+
+  width: 38vw;
+  height: 16vw;
+
+  border: 2px solid black;
+
+  display: flex;
+  justify-content:center;
+  align-items: center;
+}
+
+/* STYLING FOR SHOP */
+#shop {
+  position: absolute;
+  top: 29vw;
+  right: 8.5vw;
+
+  width: 40vw;
+  height: 14vw;
+
+  border-radius: 1vw;
+  border: 0.25vw solid black;
+
+  display: flex;
+  justify-content:center;
+  align-items: center;
+}
+
+#shop-item {
+  width: 12vw;
+  height: 12vw;
+
+  border: 0.2vw solid black;
+  border-radius: 15px;
+}
+
+#shop-item-center {
+  width: 12vw;
+  height: 12vw;
+  border: 0.2vw solid black;
+  border-radius: 15px;
+
+  margin-left: 0.5vw;
+  margin-right: 0.5vw;
+}
+
+#item-price {
+  width: 10vw;
+  height: 3vw;
+  border: 0.2vw solid black;
+  border-radius: 15px;
+
+  margin-top: 8vw;
+  margin-left: auto;
+  margin-right: auto;
+
+  display: flex;
+  justify-content:center;
+  align-items: center;
+}
+
+#item-price > h4 {
+  font-family: acherus_militant;
+  font-size: 1.5vw;
+  text-align: center;
+}
+
+#socials_and_bug_report{
+  position: absolute;
+  width: 12vw;
+  height: 3.5vw;
+
+  border: 0.2vw solid black;
+  border-radius: 1.25vw;
+
+  bottom: 1vw;
+  right: 2vw;
+
+  display: flex;
+  justify-content:center;
+  align-items: center;
+}
+
+#icon {
+  height: 2.5vw;
+  width: 2.5vw;
+  border: 2px solid black;
+}
+
+#middle_icon {
+  height: 2.5vw;
+  width: 2.5vw;
+  border: 2px solid black;
+
+  margin-left: 0.75vw;
+  margin-right: 0.75vw;
+}
+
+/* TITLE WORDS STYLING */
+
+#panel_title {
+  position: absolute;
+  font-family: steelfish_rg;
+  font-size: 2.5vw;
+
+  top: -7vw;
+  left: -2.5vw;
+
+  color: dodgerblue;
+  text-shadow: -0.25vw 0.25vw black;
+
+  transform: rotate(-10deg);
+
+  z-index: 2;
+}
+
+#popUpsCont {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+}
+
+.popUps {
+	position: absolute;
+	width: 500px;
+	height: 300px;
+	background-color: blue;
+	z-index: 10;
+	opacity: 0;
+	visibility: hidden;
+	transition: opacity .2s;
+}
+
+.closePopUp {
+	float: right;
+	cursor: pointer;
+}

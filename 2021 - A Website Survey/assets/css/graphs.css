@@ -1,0 +1,178 @@
+body {
+  margin: 0;
+  height: 95vh;
+  width: 100vw;
+  background-image: linear-gradient( 45deg, #e74c3c, #3f51b5);
+  font-family: verdana;
+}
+
+canvas {
+  background-color: white;
+  border: 2px solid black;
+}
+
+footer {
+  position: fixed;
+  width: 100%;
+  height: 10%;
+  bottom: 0;
+  background-color: darkblue;
+
+  text-align: center;
+}
+
+button {
+  font-size: 1vw;
+  margin-top: 1vw;
+  height: 3vw;
+  width: 5vw;
+}
+
+h1 {
+  font-family: helvetica;
+  text-align: center;
+  font-size: 3vw;
+  color: white;
+}
+
+/* Color card graphs */
+#bg_color_container {
+  position: absolute;
+  z-index: 3;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 35vw;
+} 
+
+#bg_color_solid_container{
+  position: absolute;
+  z-index: 3;
+  width: 25.755vw;
+  right: 2vw;
+  top: 2vw;
+}
+
+.grad_info_container {
+  position: absolute;
+  z-index: 3;
+}
+
+#grad_angle_container {
+  top: 2vw;
+  left: 3vw;
+  width: 25vw;
+}
+
+#grad_color1_container, #grad_color2_container {
+  top: 16vw;
+  width: 12vw;
+}
+#grad_color1_container {
+  left: 3vw;
+}
+#grad_color2_container {
+  left: 16vw;
+}
+
+.misc_color {
+  z-index: 3;
+  position: absolute;
+  top: 29.25vw;
+  width: 15vw;
+}
+
+#card_bg_color_container {
+  left: 14vw;
+}
+#text_color_container {
+  left: 32vw;
+}
+#border_color_container {
+  left: 50vw;
+}
+#avrg_border_width{
+  background-color: white;
+  height: 15vw;
+  left: 68vw;
+  text-align: center;
+  border: 2px solid black;
+}
+  #avrg_border_width > h2 {
+    color: grey;
+    font-weight: bold;
+    font-size: 20px;
+    padding-top: 10px;
+  }
+  #avrg_border_width > p {
+    font-size: 3vw;
+    margin-top: 3.5vw;
+    color: grey;  
+  }
+
+.line {
+  position: absolute;
+  z-index: 1;
+  background-color: #141414;
+  width: 50vw;
+  height: 1vw;
+}
+  #line1 {
+    left: 15.5vw;
+    top: 14.75vw;
+    width: 70vw;
+  }
+  #line2 {
+    left: 15vw;
+    width: 1vw;
+    height: 15vw;
+  }
+  #line3{
+    top: 37vw;
+    width: 100vw;
+  }
+
+/* Font Graphs */
+.font_fam_graph_container {
+  z-index: 3;
+  position: absolute;
+  width: 40vw;
+}
+#heading_font_fam_container {
+  left: 8vw;
+}
+#content_font_fam_container {
+  right: 8vw;
+}
+
+.misc_font {
+  background-color: white;
+  height: 10vw;
+  width: 15vw;
+  border: 2px solid black;
+  position: absolute;
+  z-index: 3;
+  color: grey;
+  text-align: center;
+  font-weight: bold;
+
+  top: 30vw;
+}
+  .misc_font > p {
+    margin-top: -0.2vw;
+    font-size: 2vw;
+  }
+
+#avrg_head_font_size {left: 8vw;}
+#avrg_head_letter_space {left: 31vw;}
+#avrg_content_font_size {right: 8vw;}
+#avrg_subhead_font_size {right: 31vw;}
+
+/* Satisfaction Graph */
+#satisfaction_graph_container {
+  width: 60vw;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+
+}

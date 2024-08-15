@@ -1,0 +1,21 @@
+.farmnav {
+    width: 15%;
+    margin-left: 5%;
+    height: 80%;
+    position: absolute;
+}
+.farmnav a {
+    text-decoration: none;
+}
+  
+.farmnav a.router-link-exact-active {
+    color: #29b475;
+}
+
+.farm_main {
+    width: 70%;
+    margin-left: 21%;
+  }
+/* .farmnav h1 {
+    color: #fbb040;
+} */
